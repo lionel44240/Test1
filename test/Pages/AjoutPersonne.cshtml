@@ -1,0 +1,23 @@
+﻿@page
+@model Web.Pages.AjoutPersonneModel
+@{
+}
+
+<form method="post">
+    <fieldset>
+        <legend>Nouvelle personne</legend>
+        <p>
+            <label for="Prenom">Nom :</label>
+            <input asp-for="Personne.Nom" required type="text" name="Nom" />
+        </p>
+        <p>
+            <label for="Prenom">Prenom :</label>
+            <input asp-for="Personne.Prenom" required type="text" name="Prenom" />
+        </p>
+        <p>
+            <label for="DateNaissance">DateNaissance :</label>
+            <input asp-for="Personne.DateNaissance" required type="date" name="DateNaissance" />
+        </p>
+        <p><input type="submit" name="buttonSubmit" value="Ajouter la personne" /></p>
+    </fieldset>
+</form>
